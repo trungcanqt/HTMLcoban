@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>So Nguyen To</title>
+</head>
+<body>
+<script>
+    let numbers = prompt('Nhap so tu nhien : ');
+    let count = 0;
+    for (let   n=2; n<numbers-1; n++){
+        var flag = true;
+        if (n < 2){
+            flag = false;
+        }
+        else{
+            for (var i = 2; i < n-1; i++)
+            {
+                if (n % i == 0){
+                    flag = false;
+                    break;
+                }
+            }
+        }
+        if (flag == true){
+            document.write(n);
+            count = count+1;
+        }
+        if (count == 20){
+            break;
+        }
+    }
+</script>
+
+</body>
+</html>
