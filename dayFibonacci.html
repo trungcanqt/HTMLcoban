@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let i = 1;
+    let j = 1;
+    document.write(i+"&nbsp",j+"&nbsp");
+    do {
+        i += j;
+        document.write(i+"&nbsp");
+        j += i;
+        document.write(j+"&nbsp");
+        count = count + 2;
+    }while (count<=16)
+</script>
+
+</body>
+</html>
