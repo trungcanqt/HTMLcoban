@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Bai Tap</title>
+</head>
+<body>
+<script>
+
+    let arr = [];
+    let sl = +prompt("Nhập vào số lượng phần tử: ");
+    for (let i = 0; i < sl; i++) {
+        arr[i] = +prompt("Nhập vào phần tử thứ " + i);
+    }
+    var tong = 0;
+    var max = 0;
+    var min = arr[0];
+    for(let i = 0; i < arr.length; i++){
+        tong += arr[i];
+        if (max < arr[i]){
+            max = arr[i];
+        }
+
+    }
+    for(let i = 1; i < arr.length; i++){
+        if (min > arr[i]){
+            min = arr[i];
+        }
+    }
+    let tb = (tong/arr.length);
+
+    let arrnew = [max, min, tb];
+    document.write(arrnew);
+    // document.write(min);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh Tong Mang</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    let arr = +prompt("nhap so luong phan tu trong chuoi : ");
+    for (let i = 0; i < arr; i++){
+        mang[i] = +prompt("nhap vao phan tu mang : ");
+    }
+    // var dem = 0;
+    var tong = 0;
+    for (let i=0; i < mang.length; i++){
+        tong += mang[i];
+        // dem++;
+    }
+    document.write("tong mang : " + tong);
+</script>
+</body>
+</html>

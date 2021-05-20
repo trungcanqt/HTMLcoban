@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tong 30 so dau tien chia het cho 7</title>
+</head>
+<body>
+<script>
+    let dem = 0;
+    let tong = 0;
+
+    for (let i = 7; i < 500; i++){
+        if (i % 7 == 0) {
+            tong += i;
+            // document.write(tong+"<br>");
+            dem++;
+            if (dem == 20) {
+                document.write("Tong 30 do dau tien chia het cho 7 la : "+tong);
+                break;
+            }
+        }
+
+    }
+   //document.write(sum);
+</script>
+
+</body>
+</html>
